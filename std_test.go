@@ -12,7 +12,7 @@ import (
 func TestStdLibsIsActual(t *testing.T) { //nolint:gocognit // not need
 	goRoot, exists := os.LookupEnv("GOROOT")
 	if !exists {
-		t.Fatal("$GOROOT not found")
+		t.Skip("GOROOT not set")
 	}
 
 	goRoot += "/src"
