@@ -2,7 +2,7 @@ package goimports
 
 import (
 	"fmt"
-	"github.com/artarts36/gods"
+	"github.com/artarts36/gds"
 	"os"
 	"path/filepath"
 	"strings"
@@ -22,7 +22,7 @@ func TestStdLibsIsActual(t *testing.T) { //nolint:gocognit // not need
 		t.Fatalf("failed to read go src: %s", err)
 	}
 
-	srcStdLibsSet := gods.NewSet[string]()
+	srcStdLibsSet := gds.NewSet[string]()
 
 	var walkLibs func(entries []os.DirEntry, parent, prefix string) error
 

@@ -1,11 +1,11 @@
 package goimports
 
 import (
-	"github.com/artarts36/gods"
+	"github.com/artarts36/gds"
 )
 
 var (
-	stdLibsSet = gods.NewSet(
+	stdLibsSet = gds.NewSet(
 		"archive",
 		"archive/tar",
 		"archive/zip",

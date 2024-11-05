@@ -1,5 +1,9 @@
-github.com/artarts36/gods v0.1.1 h1:pmkT0mmUq1WXHJuCSBFi+iS0m1fuXTGDiPBoNcOTRc4=
-github.com/artarts36/gods v0.1.1/go.mod h1:mGIvmXt66FAIP/BHiDC7XHu3jV+/yuWXc/GUP9fbEjA=
+github.com/artarts36/gds v0.1.0 h1:QVXVZ6bpCLFeLx/fj1B8jJoq70JvDO3SSCLwpElgCfY=
+github.com/artarts36/gds v0.1.0/go.mod h1:CvBjGkRiHY8YLZDWb3RFAy+Ve7yQdjHQqTmKfjjlWjY=
+github.com/artarts36/gds v0.1.1 h1:D4lpkx7OtwTIX78CWbe9hb/grKMrxD3Qvujtz4YDD0g=
+github.com/artarts36/gds v0.1.1/go.mod h1:CvBjGkRiHY8YLZDWb3RFAy+Ve7yQdjHQqTmKfjjlWjY=
+github.com/artarts36/gds v0.1.2 h1:DfH5EBVI68vty/syPW+1MdWQRdVWv19CvnlxCOgQpSw=
+github.com/artarts36/gds v0.1.2/go.mod h1:CvBjGkRiHY8YLZDWb3RFAy+Ve7yQdjHQqTmKfjjlWjY=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fatih/camelcase v1.0.0 h1:hxNvNX/xYBp0ovncs8WyWZrOrpBNub/JfaMvbURyft8=

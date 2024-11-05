@@ -16,7 +16,7 @@ func NewImportGroupsFromAstImportSpecs(specs []*ast.ImportSpec, goModule string)
 			alias = spec.Name.Name
 		}
 
-		g.AddWithAlias(alias, pkgPath)
+		g.Add(alias, pkgPath)
 	}
 
 	return g

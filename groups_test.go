@@ -55,7 +55,7 @@ func TestImportGroups_SortedImports(t *testing.T) {
 		t.Run(tCase.Title, func(t *testing.T) {
 			g := NewImportGroups(tCase.GoModule)
 
-			g.Add(tCase.Imports...)
+			g.AddPkgPaths(tCase.Imports...)
 
 			assert.Equal(t, tCase.Expected, g.SortedImports())
 		})

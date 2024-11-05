@@ -3,7 +3,7 @@ module github.com/artarts36/goimports
 go 1.22.8
 
 require (
-	github.com/artarts36/gods v0.1.1
+	github.com/artarts36/gds v0.1.2
 	github.com/stretchr/testify v1.9.0
 )
 

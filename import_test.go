@@ -7,13 +7,13 @@ import (
 )
 
 func TestNewGoImport(t *testing.T) {
-	goimp := newGoImport("ds", "github.com/artarts36/gods")
+	goimp := newGoImport("ds", "github.com/artarts36/gds")
 
 	assert.Equal(t, GoImport{
 		Alias: "ds",
 		Package: Package{
-			Path:     "github.com/artarts36/gods",
-			LastName: "gods",
+			Path:     "github.com/artarts36/gds",
+			LastName: "gds",
 		},
 	}, goimp)
 }
