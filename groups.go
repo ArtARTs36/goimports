@@ -112,3 +112,7 @@ func (g *ImportGroups) SortedImports() [][]GoImport {
 func (g *ImportGroups) IsEmpty() bool {
 	return g.standard.IsEmpty() && g.vendor.IsEmpty() && g.current.IsEmpty() && g.unused.IsEmpty()
 }
+
+func (g *ImportGroups) Len() int {
+	return g.standard.Len() + g.vendor.Len() + g.current.Len() + g.unused.Len()
+}
