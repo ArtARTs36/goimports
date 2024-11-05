@@ -1,6 +1,9 @@
 package goimports
 
-import "strings"
+import (
+	"fmt"
+	"strings"
+)
 
 type GoImport struct {
 	Alias   string
@@ -26,4 +29,12 @@ func newGoImport(alias, pkgPath string) GoImport {
 	}
 
 	return imp
+}
+
+func (i *GoImport) GoString() string {
+	if i.Alias == "" {
+		return fmt.Sprintf("%q", i.Package.Path)
+	}
+
+	return fmt.Sprintf("%s %q", i.Alias, i.Package.Path)
 }
