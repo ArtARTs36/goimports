@@ -116,3 +116,29 @@ func (g *ImportGroups) IsEmpty() bool {
 func (g *ImportGroups) Len() int {
 	return g.standard.Len() + g.vendor.Len() + g.current.Len() + g.unused.Len()
 }
+
+func (g *ImportGroups) Walk(callback func(goImport GoImport) bool) {
+	stopped := false
+
+	wrappedCallback := func(_ string, goImport GoImport) bool {
+		continueWalk := callback(goImport)
+		if !continueWalk {
+			stopped = true
+			return false
+		}
+		return true
+	}
+
+	for _, walker := range g.walkers() {
+		walker(wrappedCallback)
+		if stopped {
+			return
+		}
+	}
+}
+
+func (g *ImportGroups) walkers() []func(func(_ string, goImport GoImport) bool) {
+	return []func(func(_ string, goImport GoImport) bool){
+		g.standard.Walk, g.vendor.Walk, g.current.Walk, g.unused.Walk,
+	}
+}
